@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <igx-carousel #carousel>
+    <igx-slide *ngFor="let slide of slides.slice(0,3);">
+      <div class="image-container" fxLayout="column" fxLayoutAlign="center center" >
+        <img style="width: 1200px; height: 400px;" [src]="slide.src">
+      </div>
+        <div  fxLayout="column" fxLayoutAlign="start start" >
+        <p class="slidetitle">{{slide.title}}</p>
+        <p class="slidesubtitle">{{slide.subtitle}}</p>
+        </div>
+
+    </igx-slide>
+  </igx-carousel>
+</div>

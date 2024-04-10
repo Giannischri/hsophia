@@ -1,0 +1,74 @@
+.top-wrap.cf {
+  padding: 0 10px;
+  position:relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background: var(--smoke-white);
+  width: 100%; /* Ensure container takes up full width */
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: indigo;
+  color: pink;
+  padding: 20px 20px;
+
+  .logo {
+    position:absolute;
+    left:190px;
+    font-family: 'myfont', sans-serif; /* Choose a suitable font */
+    font-size: 30px; /* Adjust the font size */
+    color: pink; /* Set the text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add some letter spacing */
+   // margin-right: 20px; /* Adjust margin as needed */
+    margin-left: 20px;
+    a {
+      color: pink;
+      text-decoration: none;
+    }
+  }
+  .logo:hover{
+    color: #FFC107;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: pink;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    justify-content: space-between;
+
+    .logo {
+      order: 1;
+    }
+
+    .navbar-toggle {
+      order: 2;
+      cursor: pointer;
+      padding: 10px;
+      background-color: indigo;
+      border: none;
+      color: pink;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

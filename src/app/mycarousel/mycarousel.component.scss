@@ -1,0 +1,56 @@
+.slidetitle{
+  position:relative;
+  font-family: 'carouseltitle', sans-serif; /* Choose a suitable font */
+  background-color: pink; /* Light blue color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 18px; /* Adjust the font size */
+  letter-spacing: 1px; /* Add some letter spacing */
+}
+.slidesubtitle{
+  position:relative;
+  font-family:'carouselsubtitle', sans-serif; /* Choose a suitable font */
+  font-size: 15px; /* Adjust the font size */
+  background-color: #ADD8E6; /* Light blue color */
+  padding: 20px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+}
+.carousel-container {
+  width: 70vw;
+  height: 80vh;
+  margin: 16px auto;
+
+}
+
+:host ::ng-deep{
+  .image-container {
+    max-width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .igx-carousel {
+    max-width: 100%;
+    width: unset;
+
+  }
+
+  .igx-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: unset;
+    background-image: url('/assets/19373.jpg'); /* Set the background image using a URL */
+    background-size: cover; /* Cover the entire background with the image */
+    background-position: center; /* Center the background image */
+    border-radius: 10px; /* Add rounded corners to the div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+
+  .igx-slide img {
+    object-fit: fill;
+    max-width: 90%;
+  }
+}
