@@ -1,0 +1,25 @@
+---
+- name: Git Operations
+  hosts: localhost
+  vars:
+    repo_path: "/path/to/your/repo"  # Update this path to your repository's location
+    commit_message: "Automated commit message"  # Customize your commit message
+    remote_name: "origin"  # Commonly 'origin', change if needed
+    branch_name: "main"  # Your target branch
+
+  tasks:
+    - name: Stage all changes
+      command:
+        cmd: "git add ."
+        chdir: "{{ repo_path }}"
+
+    - name: Commit changes
+      command:
+        cmd: "git commit -m '{{ commit_message }}'"
+        chdir: "{{ repo_path }}"
+      ignore_errors: yes  # In case there's nothing to commit
+
+    - name: Push changes to remote repository
+      command:
+        cmd: "git push {{ remote_name }} {{ branch_name }}"
+        chdir: "{{ repo_path }}"

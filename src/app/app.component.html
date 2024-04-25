@@ -1,0 +1,20 @@
+
+<app-toolbar class="toolbar" [class.is-phone-portrait]="isPhonePortrait"></app-toolbar>
+
+<div class="popups" [class.is-phone-portrait]="isPhonePortrait">
+  <router-outlet></router-outlet>
+</div>
+<div class="cool-background" fxLayout="row" fxLayoutAlign="start center" [class.is-phone-portrait]="isPhonePortrait">
+  <app-mycarousel class="mycarousel" [class.is-phone-portrait]="isPhonePortrait" ></app-mycarousel>
+  <app-myverticalcarousel *ngIf="!isPhonePortrait"></app-myverticalcarousel>
+</div>
+<div class="timeline-app" [class.is-phone-portrait]="isPhonePortrait">
+<app-timeline></app-timeline>
+  <app-footer class="footer" [class.is-phone-portrait]="isPhonePortrait" ></app-footer>
+</div>
+
+
+
+
+
+

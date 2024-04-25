@@ -1,0 +1,38 @@
+
+@use "igniteui-angular/theming" as *;
+// Uncomment the following lines if you want to add a custom palette:
+// $primary: #731963 !default;
+// $secondary: #ce5712 !default;
+// $app-palette: palette($primary, $secondary, $surface);
+
+/* autoprefixer grid: on */
+@include core();
+@include typography($font-family: $material-typeface, $type-scale: $material-type-scale);
+@include theme($default-palette);
+// CSS Reset, comment out if not required or using a different module
+@import 'minireset.css/minireset';
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: 'myfont';
+  src: url('/assets/fonts/Aileron-SemiBold.woff2') format('woff2');
+  /* Add additional src lines for other font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'carouseltitle';
+  src: url('/assets/fonts/Aileron-BoldItalic.woff2') format('woff2');
+  /* Add additional src lines for other font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'carouselsubtitle';
+  src: url('/assets/fonts/Aileron-ThinItalic.woff2') format('woff2');
+  /* Add additional src lines for other font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}

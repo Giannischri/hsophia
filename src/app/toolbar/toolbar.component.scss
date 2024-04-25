@@ -1,0 +1,56 @@
+.top-wrap.cf {
+  padding: 0 10px;
+  position:relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background: var(--smoke-white);
+  width: 100%; /* Ensure container takes up full width */
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: indigo;
+  color: pink;
+  padding: 20px 20px;
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: pink;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .nav-links {
+      display: flex;
+      width:60%;
+    }
+    justify-content:space-between;
+
+    .navbar-toggle {
+      order: 2;
+      cursor: pointer;
+      padding: 10px;
+      background-color: indigo;
+      border: none;
+      color: pink;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    .img{
+      width:50%;
+    }
+  }
+}
+

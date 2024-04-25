@@ -1,0 +1,20 @@
+<h1>Camera Web Interface</h1>
+<img id="cameraFrame" src="" alt="Camera Frame" width="640" height="480">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script>
+  const socket = io();
+
+  socket.on('connect', () => {
+    console.log('Connected to server');
+  });
+
+  socket.on('camera_frame', data => {
+    const cameraFrame = document.getElementById('cameraFrame');
+    cameraFrame.src = 'data:image/jpeg;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(data.frame)));
+  });
+
+  socket.on('disconnect', () => {
+    console.log('Disconnected from server');
+  });
+</script>

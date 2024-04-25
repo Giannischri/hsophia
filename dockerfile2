@@ -1,0 +1,31 @@
+
+FROM node:18 AS build
+WORKDIR /app
+
+
+#COPY package*.json ./
+COPY . /app
+
+RUN npm ci
+
+RUN npm run build
+EXPOSE 4000
+CMD ["node", "dist/hsophia/server/server.mjs"]
+#FROM nginx:alpine
+
+#COPY --from=build /app/dist/hsophia /usr/share/nginx/html
+#COPY nginx2.conf /etc/nginx/nginx.conf
+
+# Copy a custom Nginx configuration (optional)
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
+#RUN chmod -R 755 /usr/share/nginx/html
+#EXPOSE 80
+
+# Start Nginx when the container launches
+#CMD ["nginx", "-g", "daemon off;"]
+
+#FROM node:18 AS ssr-server
+#COPY --from=build /app/dist /app/dist/
+#COPY ./package.json /app/package.json
+#WORKDIR /app
+#CMD npm run serve:ssr
