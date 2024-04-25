@@ -13,25 +13,25 @@
 @import 'minireset.css/minireset';
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html,
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @font-face {
   font-family: 'myfont';
-  src: url('/assets/fonts/Aileron-SemiBold.woff2') format('woff2');
+  src: url('/assets/fonts/Aileron-HeavyItalic.woff2') format('woff2');
   /* Add additional src lines for other font formats if necessary */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'carouseltitle';
-  src: url('/assets/fonts/Aileron-BoldItalic.woff2') format('woff2');
+  src: url('/assets/fonts/Aileron-HeavyItalic.woff2') format('woff2');
   /* Add additional src lines for other font formats if necessary */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'carouselsubtitle';
-  src: url('/assets/fonts/Aileron-ThinItalic.woff2') format('woff2');
+  src: url('/assets/fonts/Aileron-HeavyItalic.woff2') format('woff2');
   /* Add additional src lines for other font formats if necessary */
   font-weight: normal;
   font-style: normal;

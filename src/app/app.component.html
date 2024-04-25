@@ -6,8 +6,8 @@
 </div>
 <div class="cool-background" fxLayout="row" fxLayoutAlign="start center" [class.is-phone-portrait]="isPhonePortrait">
   <app-mycarousel class="mycarousel" [class.is-phone-portrait]="isPhonePortrait" ></app-mycarousel>
-  <app-myverticalcarousel *ngIf="!isPhonePortrait"></app-myverticalcarousel>
-</div>
+  <app-myverticalcarousel class="myverticalcarousel" *ngIf="!isPhonePortrait"></app-myverticalcarousel>
+  </div>
 <div class="timeline-app" [class.is-phone-portrait]="isPhonePortrait">
 <app-timeline></app-timeline>
   <app-footer class="footer" [class.is-phone-portrait]="isPhonePortrait" ></app-footer>
