@@ -78,6 +78,39 @@
     object-fit: fill;
     max-width: 90%;
   }
+  @media only screen and (max-width: 700px) {
+    .example-card {
+      justify-content: center;
+      min-height:50vh;
+      min-width:70vw;
+
+    }
+    .slidesubtitle{
+      position:relative;
+      font-family:'carouselsubtitle', sans-serif; /* Choose a suitable font */
+      font-size: 15px; /* Adjust the font size */
+      background-color: #ADD8E6; /* Light blue color */
+      padding: 20px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Add rounded corners */
+      width:fit-content;
+      overflow: hidden;
+    }
+    .igx-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 10;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+
+      padding: 30px 30px;
+
+    }
+
+
+  }
 
 
 
