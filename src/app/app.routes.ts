@@ -8,7 +8,8 @@ import {AboutComponent} from "./about/about.component";
 export const routes: Routes = [
 
       { path:'sign-in', component: LoginformComponent },
-      { path:'about',component: AboutComponent}
+      { path:'about',component: AboutComponent},
+
 
 
 ];

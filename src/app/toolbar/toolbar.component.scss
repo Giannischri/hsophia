@@ -15,7 +15,7 @@
   background-color: indigo;
   color: pink;
   padding: 20px 20px;
-
+}
   .nav-links {
     list-style-type: none;
     display: flex;
@@ -29,31 +29,13 @@
       }
     }
   }
+@media screen and (max-width: 480px) {
+  .nav-links {
+    display: flex;
+    padding-left:30%;
 
-  @media screen and (max-width: 480px) {
-    .nav-links {
-      display: flex;
-      width:60%;
-      padding-left:5%;
-
-    }
-    justify-content:space-between;
-
-    .navbar-toggle {
-      order: 2;
-      cursor: pointer;
-      padding: 10px;
-      background-color: indigo;
-      border: none;
-      color: pink;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-    }
-    .img{
-      width:10%;
-      margin-right:10px;
-    }
   }
+
 }
+
 
