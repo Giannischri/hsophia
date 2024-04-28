@@ -22,7 +22,6 @@
   width: 60vw;
   height: 90vh;
 
-
 }
 
 :host ::ng-deep{
@@ -39,7 +38,7 @@
     justify-content: center;
     min-height:50vh;
     min-width:50vw;
-
+    border-radius: 5px;
   }
   .image-wrapper {
     overflow: hidden;  /* Hides parts of the image that overflow the container */
@@ -85,6 +84,7 @@
       min-width:70vw;
 
     }
+
     .slidesubtitle{
       position:relative;
       font-family:'carouselsubtitle', sans-serif; /* Choose a suitable font */
@@ -92,7 +92,7 @@
       background-color: #ADD8E6; /* Light blue color */
       padding: 20px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Add rounded corners */
-      width:fit-content;
+      width:100%;
       overflow: hidden;
     }
     .igx-nav-arrow {
@@ -104,7 +104,8 @@
       z-index: 10;
       color: white;
       background: rgba(0, 0, 0, 0.5);
-
+      left:15px;
+      bottom:25px;
       padding: 30px 30px;
 
     }

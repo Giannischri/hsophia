@@ -37,7 +37,7 @@ export class MycarouselComponent  implements OnInit {
       id: 1,
       src: '../assets/AI-Senior-Care.webp',
       title: 'Συντροφιά και μείωση της αίσθησης μοναξιάς',
-      subtitle: 'Έλάτε σε επικοινωνία με την ΗΣΟΦΙΑ για να διασκεδάσετε,συνομιλήσετε,ακούσετε μουσική κ.ο.κ'
+      subtitle: 'Έλάτε σε επικοινωνία με την ΗΣΟΦΙΑ για να διασκεδάσετε,συνομιλήσετε μαζι της'
     }
     this.slides[2] = {
       id: 2,
