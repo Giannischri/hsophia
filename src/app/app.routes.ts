@@ -6,10 +6,9 @@ import {AppComponent} from "./app.component";
 import {AboutComponent} from "./about/about.component";
 
 export const routes: Routes = [
-
+      { path: '', redirectTo: '', pathMatch: 'full' },
       { path:'sign-in', component: LoginformComponent },
       { path:'about',component: AboutComponent},
-
 
 
 ];
