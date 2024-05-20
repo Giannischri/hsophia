@@ -1,6 +1,6 @@
 <div class="carousel-container">
   <igx-carousel #carousel>
-    <igx-slide *ngFor="let slide of slides.slice(0,3);">
+    <igx-slide *ngFor="let slide of slides.slice(0,4);">
 
       <mat-card class="example-card">
         <mat-card-header>
@@ -8,8 +8,9 @@
           <mat-card-title>{{slide.title}}</mat-card-title>
         </mat-card-header>
         <div class="image-wrapper">
-        <img mat-card-image [src]="slide.src" alt="Photo of a Hsophia">
-        </div>
+          <img *ngIf="slide.id != 0" mat-card-image [src]="slide.src" alt="Photo of Sophia">
+
+          <video *ngIf="slide.id === 0" mat-card-image [src]="slide.src" controls alt="Video of Sophia"></video>        </div>
         <mat-card-content>
           <p class="slidesubtitle">{{slide.subtitle}}</p>
         </mat-card-content>
